@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
 		exit(1);
 	}
 
+	service = argv[1];
 	user = argv[2];
 
 	retval = pam_start(service, user, &conv, &pamh);
